@@ -1,206 +1,114 @@
 layout: {zmk_keyboard: temper}
 layers:
-  default:
+  Base:
   - - Q
-    - W
-    - F
-    - P
-    - B
-    - J
     - L
     - U
+    - {t: ',', s: <}
+    - .
+    - F
+    - W
+    - R
     - Y
-    - {t: '''', s: '"'}
-  - [A, R, S, T, G, M, N, E, I, O]
+    - P
+  - - E
+    - I
+    - A
+    - O
+    - {t: '-', s: _}
+    - K
+    - T
+    - N
+    - S
+    - H
   - - Z
     - X
     - C
-    - D
     - V
-    - K
-    - H
-    - {t: ',', s: ;}
-    - {t: ., s: ':'}
-    - {t: '?', s: '!'}
-  - - cmd
-    - num
-    - {t: ⇧, s: ⇪}
-    - SPACE
-    - nav
-    - {t: default, h: toggle}
-  game:
-  - - ↹
-    - Q
-    - W
-    - E
-    - R
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - ⇧
-    - A
-    - S
+    - BT
+    - G
     - D
-    - F
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - ⌃
-    - Z
-    - X
-    - C
-    - V
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - ESC
-    - {t: ▽, type: trans}
-    - SPACE
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  num:
-  - - '~'
-    - '@'
-    - '{'
-    - '}'
-    - '%'
-    - '*'
-    - '7'
-    - '8'
-    - '9'
-    - {t: '-', s: _}
-  - [^, '#', (, ), $, _, '4', '5', '6', +]
-  - - {t: '&', s: '|'}
-    - <
-    - {t: '[', s: '{'}
-    - {t: ']', s: '}'}
-    - '>'
-    - {t: /, s: \}
-    - '1'
-    - '2'
-    - '3'
-    - {t: '=', s: +}
-  - - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
-    - '0'
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  nav:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - DEL
-    - HOME
-    - END
-    - ↹
-    - BSPC
-  - - {t: ⇧, h: sticky}
-    - {t: ⌃, h: sticky}
-    - {t: ⎇, h: sticky}
-    - {t: ⌘, h: sticky}
-    - {t: ▽, type: trans}
-    - ←
-    - ↓
-    - ↑
-    - →
-    - {t: ESC, s: '`'}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - RET
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
-  fun:
-  - - {t: game, h: toggle}
-    - MUTE
-    - VOL DN
-    - VOL UP
-    - OUT USB
-    - {t: ▽, type: trans}
+    - M
+    - J
+    - {t: B, h: Symbol}
+  - - ⌘
+    - {t: ↹, h: LEFT SHIFT}
+    - {t: SPACE, h: ⌃}
+    - {t: ENTER, h: Number}
+    - BACKSPACE
+    - '?'
+  Number:
+  - [F1, F2, '', F4, F5, '', '7', '8', '9', '']
+  - - ''
     - F7
-    - F8
+    - ''
     - F9
-    - F12
+    - F10
+    - {t: ., s: '>'}
+    - '4'
+    - '5'
+    - '6'
+    - KP ENTER
+  - ['', F12, '', '', '', '0', '1', '2', '3', KP ENTER]
+  - - ''
+    - {t: ↹, h: LEFT SHIFT}
+    - {t: SPACE, h: ⌃}
+    - {type: held}
+    - BACKSPACE
+    - ''
+  Symbol:
+  - [LANGUAGE 5, Sft+8, Sft+9, INT YEN, '', ESC, '', '', ^, '%']
+  - - LANGUAGE 1
+    - ']'
+    - '#'
+    - '['
+    - ''
+    - {t: '=', s: +}
+    - KP PLUS
+    - {t: '-', s: _}
+    - KP ASTERISK
+    - {t: /, s: '?'}
+  - - LANGUAGE 2
+    - {t: ;, s: ':'}
+    - ''''
+    - Sft+INT RO
+    - ''
+    - ←
+    - ↑
+    - ↓
+    - →
+    - {type: held}
+  - - ''
+    - {t: ↹, h: LEFT SHIFT}
+    - {t: SPACE, h: ⌃}
+    - KP ENTER
+    - BACKSPACE
+    - ''
+  BT:
   - - {t: BT, h: '0'}
     - {t: BT, h: '1'}
     - {t: BT, h: '2'}
     - {t: BT, h: '3'}
     - {t: BT, h: '4'}
-    - {t: ▽, type: trans}
-    - F4
-    - F5
-    - F6
-    - F11
-  - - BT CLR
-    - PREV
-    - PP
-    - NEXT
-    - OUT BLE
-    - {t: ▽, type: trans}
-    - F1
-    - F2
-    - F3
-    - F10
-  - - {t: ▽, type: trans}
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - [BT NXT, BT PRV, '', '', BT CLR, '', '', '', '', '']
+  - - ''
+    - ''
+    - ''
+    - ''
     - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
-  cmd:
-  - - ⌘Q
-    - ⌘W
-    - F
-    - Gui+P
-    - B
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - ⇧
-    - ⌃
-    - ⎇
-    - ⌘
-    - Gui+G
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - ⌘Z
-    - ⌘X
-    - ⌘C
-    - D
-    - ⌘V
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - ['', '', '', '', '', '']
+combos:
+- p: [35, 31]
+  k: '!'
+- p: [31, 34]
+  k: DELETE
